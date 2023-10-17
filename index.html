@@ -1,48 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        .container {
-            padding: 50px;
-        }
-        .logo {
-            width: 100px;
-            height: 100px;
-            margin: 20px auto;
-            background-color: #4caf50;
-            border-radius: 50%;
-            color: #ffffff;
-            font-size: 48px;
-            line-height: 100px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            color: #777777;
-            margin-bottom: 30px;
-        }
-    </style>
+    <title>ليث التميمي</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">Logo</div>
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
-        <p>Follow us on social media for updates:</p>
-        <a href="#" target="_blank">Facebook</a> | 
-        <a href="#" target="_blank">Twitter</a> | 
-        <a href="#" target="_blank">Instagram</a>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">ليث التميمي</a></li>
+                <li><a href="#info">معلوماتي</a></li>
+                <li><a href="#experience">الخبرات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="content">
+        <h1>الصفحة الرئيسية</h1>
+        <div class="slider">
+            <div class="slide active">
+                <img src="Images/laith1.png" alt="صورة 1">
+            </div>
+            <div class="slide">
+                <img src="Images/laith2.png" alt="صورة 2">
+            </div>
+            <div class="slide">
+                <img src="Images/laith5.JPG" alt="صورة 3">
+            </div>
+            <div class="slide">
+                <img src="Images/laith3.png" alt="صورة 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="content">
+        <h1>المعلومات الشخصية</h1>
+        <h2>ليث حسن علوان التميمي </h2>
+        <p>حاصل على شهادة البكالوريوس في الدراسات الاسلامية
+        عمل في مجال التجارة والاستثمار وهو المدير المفوض في مؤسسة فيض الرافدين الإنسانية </p>
+        <!-- أضف المزيد من المعلومات هنا -->
+    </section>
+
+    <section id="experience" class="content">
+        <h1>الخبرات</h1>
+        <ul class="right-aligned">
+            <li>حاصل على شهادة في الظهور الإعلامي المميز من بيروت بالإضافة الى خبرته المكتسبة</li>
+            <li>حاصل على شهادة من المركز الدبلوماسي في بغداد بالإتكيت والبروتوكول </li>
+            <li>وخبرة في التعامل التجاري وطرق اعداد المشاريع في العراق من منظمة هيومان ريسورس </li>
+            <li>دورة في المشاكل السياسية وحل الازمات في بيروت</li>
+            <li>ولديه عضويه في غرفة التجارة العراقية واتحاد الصناعيين العراقيين</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
