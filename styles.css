@@ -1,0 +1,96 @@
+body {
+    background-color: #4CAF50; /* Green background */
+    color: #ffffff; /* Black text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFF; /* White background for the header */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Header shadow */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #4CAF50; /* Green text color for the navbar links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ffffff; /* Section dividers */
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.slide {
+    flex: 1;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 10px; /* Spacing between images */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-aligned {
+    text-align: right; /* Right-aligned text for the list */
+}
+
+.right-aligned li {
+    direction: rtl; /* Right-to-left text direction for list items */
+    text-align: right;
+    list-style-position: inside; /* List markers inside list items */
+}
+
+/* Additional styling for sections */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Add more styling for other elements as needed */
