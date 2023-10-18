@@ -9,38 +9,36 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
             background: url("Images/laith7.png") no-repeat center center fixed;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             color: white;
         }
 
-        .login-container {
+        .info-box {
             background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             max-width: 500px;
+            text-align: right;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
-        .login-container h1 {
-            font-size: 30px;
+        .info-box h1 {
+            font-size: 24px;
+            margin: 0;
+            padding: 10px 0;
         }
 
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
+        .info-box p {
             font-size: 18px;
         }
 
-        .login-container input[type="submit"] {
+        .read-more-button {
             background-color: #4CAF50;
             color: white;
             padding: 15px 20px;
@@ -52,26 +50,18 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>صفحة تسجيل الدخول</h1>
-        <form>
-            <input type="text" id="username" placeholder="اسم المستخدم">
-            <input type="password" id="password" placeholder="كلمة المرور">
-            <input type="button" value="تسجيل الدخول" onclick="checkLogin()">
-        </form>
+    <div class="info-box">
+        <h1>ليث حسن علوان التميمي </h1>
+        <p>
+            هذه هي الصفحة الرئيسية للاستاذ ليث حسن  تحتوي على معلومات وتفاصيل تخص الاستاذ ليث
+            يمكنك قراءة المزيد من المعلومات عن الصفحة الرئيسية وما تحتويه عند النقر على الزر اقرأ المزيد
+        </p>
+        <button class="read-more-button" onclick="redirectToMainPage()">اقرأ المزيد</button>
     </div>
-    <script>
-        function checkLogin() {
-            var enteredUsername = document.getElementById("username").value;
-            var enteredPassword = document.getElementById("password").value;
 
-            // Check for hardcoded username and password
-            if (enteredUsername === "laith" && enteredPassword === "12345") {
-                // Redirect to the main page
-                window.location.href = "main.html";
-            } else {
-                alert("Invalid username or password. Please try again.");
-            }
+    <script>
+        function redirectToMainPage() {
+            window.location.href = "main.html";
         }
     </script>
 </body>
