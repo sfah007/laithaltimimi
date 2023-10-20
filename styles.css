@@ -37,12 +37,12 @@ nav a {
     }
 
     nav li {
-        display: inline; /* Change to block for a stacked layout */
-        margin: 0px 10px; /* Add vertical spacing between items */
+        display: block; /* Change to block for a stacked layout */
+        margin: 10px 0; /* Add vertical spacing between items */
     }
 
     nav a {
-        display: inline; /* Ensure the links take up the full width */
+        display: block; /* Ensure the links take up the full width */
         text-align: center;
     }
 }
