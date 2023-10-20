@@ -29,6 +29,24 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 10px; /* Add some spacing between items */
+    }
+
+    nav li {
+        display: inline; /* Change to block for a stacked layout */
+        margin: 0px 10px; /* Add vertical spacing between items */
+    }
+
+    nav a {
+        display: inline; /* Ensure the links take up the full width */
+        text-align: center;
+    }
+}
+
 
 .content {
     text-align: center;
