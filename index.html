@@ -14,7 +14,7 @@
             background-size: contain;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
             color: white;
@@ -22,9 +22,9 @@
 
         .info-box {
             background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+            padding: 7px;
             border-radius: 10px;
-            max-width: 500px; /* Set a maximum width for the info box */
+            max-width: 400px; /* Set a maximum width for the info box */
             text-align: right;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
@@ -51,7 +51,8 @@
 
         @media (max-width: 768px) {
             .info-box {
-                min-width: 60%; /* Adjust the maximum width for smaller screens */
+                max-width: 60%; /* Adjust the maximum width for smaller screens */
+                text-align: center;
             }
         }
     </style>
